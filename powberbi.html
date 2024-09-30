@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Alenea Davis Portfolio - Data Professional Survey Analysis</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <h1>Data Professional Survey Analysis</h1>
+                <img src="images/growth-data-analysis.avif" alt="Growth" style="width: 100%; max-width: 1000px;" />
+            </div>
+        </header>
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+                <p><strong style="font-size: 35px;">Overview:</strong></p>
+                <p>This project involves analyzing a survey of data professionals to uncover insights into <strong>career paths, salaries, work satisfaction,</strong> and <strong>challenges</strong> in the field. The analysis was performed using <strong>Power BI</strong>, which allowed for interactive visualizations and dynamic data exploration. The goal is to provide an interactive dashboard that visualizes trends and patterns in the responses, helping industry stakeholders understand the current state of the data profession.</p>
+
+				<p><a href="https://app.powerbi.com/view?r=eyJrIjoiYWViODI5MzUtNmM0NS00ZDgyLTg4ZGEtZmQwZTU3NmRlODEzIiwidCI6ImM5MzgwZjhiLWM4ODEtNDkxMy1iMTViLTJiYzE3YWU0NTE1MCJ9" class="button">Click here to explore the interactive dashboard</a>
+                <p><strong style="font-size: 35px;">Tools and Techniques</strong></p>
+                <p>This dashboard was built using <strong>Power BI</strong>. It includes data cleaning and transformation using <strong>Power Query</strong>, and visualizations were created with <strong>DAX measures</strong> for detailed analysis. The dataset consists of survey responses, covering fields such as salary, job role, programming languages, and work-life balance satisfaction.</p>
+
+                <p><strong style="font-size: 35px;">Data Summary</strong></p>
+                <p>The dataset used in this project contains responses from <strong>630 data professionals</strong> across various roles and industries. The following data points were collected and analyzed:</p>
+                <ul>
+                    <li><strong>Job Roles:</strong> Captures various roles including Data Analyst, Data Scientist, and Data Engineer.</li>
+                    <li><strong>Salary Ranges:</strong> Records annual salaries, allowing analysis of compensation across roles.</li>
+                    <li><strong>Industry Sectors:</strong> Identifies the industries in which respondents work, such as Technology, Finance, and Healthcare.</li>
+                    <li><strong>Work Satisfaction Levels:</strong> Measures satisfaction with factors such as salary and work-life balance.</li>
+                    <li><strong>Programming Language Preferences:</strong> Records which programming languages respondents use most frequently, including Python, R, and SQL.</li>
+                    <li><strong>Difficulty Entering the Data Profession:</strong> Captures respondents' experiences in entering the field, ranging from easy to very difficult.</li>
+                    <li><strong>Respondent Demographics:</strong> Includes age and country of residence, providing insights into the demographic distribution of the survey participants.</li>
+                </ul>
+
+                <p><strong style="font-size: 35px;">Key Insights and Visualizations</strong></p>
+
+                <p><strong style="font-size: 25px;">1. Breaking Into Data</strong></p>
+                <p><strong>42.7% of respondents</strong> found entering the data profession <strong>"Difficult"</strong>, while only <strong>6.98%</strong> found it <strong>"Easy"</strong>. This data is visualized using a pie chart, which is effective for showing the proportions of respondents' experiences. The pie chart format makes it easy to see the distribution of difficulty levels, helping viewers quickly understand how challenging it is to enter the field of data.</p>
+                <img src="images/break_data.PNG" alt="Breaking Into Data" style="width: 100%; max-width: 1000px;" />
+
+                <p><strong style="font-size: 25px;">2. Average Salary by Role</strong></p>
+                <p><strong>Data Scientists</strong> are the highest-paid role, with an average salary of <strong>$ 94,000</strong>, followed by Data Engineers and Data Architects. This is shown using a stacked bar chart, which allows for easy comparison of salaries across different roles. The stacked layout is especially effective here because it accommodates longer role names, ensuring the information is easy to read and understand.</p>
+                <img src="images/avg_salary.PNG" alt="Salary by Role" style="width: 100%; max-width: 1000px;" />
+
+                <p><strong style="font-size: 25px;">3. Top Programming Languages</strong></p>
+                <p><strong>Python</strong> is the most popular programming language, followed by <strong>R</strong>. This is shown using a stacked column chart, which allows for easy comparison of the number of respondents using each programming language, while stacking job roles to provide additional context. The stacked column chart was chosen because it provides a clear visual representation of how programming languages are distributed across different job roles, making it easy to compare and understand the overlap between language preference and job roles.</p>
+                <img src="images/top_program.PNG" alt="Top Programming Languages" style="width: 100%; max-width: 1000px;" />
+
+                <p><strong style="font-size: 25px;">4. Work/Life Balance Satisfaction and Salary Satisfaction</strong></p>
+                <p>Respondents rated their <strong>work/life balance at an average of 5.74/10</strong>, and <strong>salary satisfaction at 4.27/10</strong>, indicating room for improvement in both areas. These two visuals are gauge charts, chosen because they clearly show how satisfaction levels measure against the possible maximum (10). The use of gauge charts helps highlight the gap between current satisfaction and an ideal score, making it easy for viewers to understand these metrics at a glance.</p>
+
+                <div style="display: flex; justify-content: space-between;">
+                    <img src="images/work_life.PNG" alt="Work Life Balance Satisfaction" style="width: 48%; max-width: 600px;" />
+                    <img src="images/salary.PNG" alt="Salary Satisfaction" style="width: 48%; max-width: 600px;" />
+                </div>
+
+                <p><strong style="font-size: 25px;">5. Global Reach of Respondents</strong></p>
+                <p><strong>The largest group of survey takers</strong> is from the <strong>United States</strong>, followed by respondents from "Other" countries and India. This is represented using a treemap, chosen because it visually displays the hierarchical nature of country participation in proportion to each other. The size of each block allows viewers to quickly grasp which countries had the most respondents, making it ideal for comparing proportions in a visually engaging format.</p>
+                <img src="images/global_reach.PNG" alt="Global Reach" style="width: 100%; max-width: 1000px;" />
+
+                <p><strong style="font-size: 25px;">6. Total Survey Respondents and Average Age</strong></p>
+                <p>The survey was taken by <strong>630 respondents</strong>, providing a broad base for analysis across various metrics. The average age of respondents is <strong>29.87 years</strong>, indicating a predominantly early to mid-career demographic. These two visuals are simple KPI cards, chosen because they effectively present key metrics at a glance. The card format is ideal for presenting a high-level overview, allowing viewers to quickly understand the total number of respondents and the average age.</p>
+
+                <div style="display: flex; justify-content: space-between;">
+                    <img src="images/total_survey.PNG" alt="Total Survey Respondents" style="width: 48%; max-width: 500px;" />
+                    <img src="images/avg_age.PNG" alt="Average Age" style="width: 48%; max-width: 500px;" />
+                </div>
+
+                <p><strong style="font-size: 35px;">Interactive Features</strong></p>
+                <p>The dashboard allows filtering by <strong>country, industry, or job role</strong> and features drill-down options for more granular insights.</p>
+
+                <p><strong style="font-size: 35px;">Challenges and Learnings</strong></p>
+                <p>One of the key challenges was managing incomplete data. Power Query was used for data cleaning, and DAX measures were applied for dynamic analysis.</p>
+
+                <p><strong style="font-size: 35px;">Outcome/Impact</strong></p>
+                <p>This dashboard provides a comprehensive overview of the data profession, offering actionable insights into <strong>salary benchmarks, job satisfaction,</strong> and <strong>career challenges</strong>.</p>
+
+                
+
+                
+                
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <section style="text-align: center;">
+                <h2>Contact</h2>
+                <ul class="icons" style="list-style: none; padding: 0; margin: 0; display: inline-block;">
+                    <li style="display: inline-block; margin-right: 10px;"><a href="https://www.linkedin.com/in/alenea-davis/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                    <li style="display: inline-block; margin-right: 10px;"><a href="https://github.com/aleneadavis" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+                    <li style="display: inline-block; margin-right: 10px;"><a href="tel:+1318947262" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+                    <li style="display: inline-block;"><a href="mailto:aleneadavis@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+                </ul>
+            </section>
+            <ul class="copyright" style="text-align: center; list-style: none; padding: 0; margin-top: 20px;">
+                <li>&copy; Alenea Davis. All rights reserved.</li>
+            </ul>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>

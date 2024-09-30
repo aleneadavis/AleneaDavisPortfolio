@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Alenea Davis Portfolio - Global Layoff Analysis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<!-- Custom Styles for Bullets -->
+		<style>
+		    /* Main list (first level) */
+		    ul {
+		        list-style-type: disc; /* Default bullet for the main list */
+		        margin-left: 20px; /* Base indentation */
+		    }
+
+		    /* Customize second-level (nested) bullets */
+		    ul ul {
+		        list-style-type: circle; /* Change bullet style for second level */
+		        margin-left: 30px; /* Increase indentation for second-level lists */
+		        font-size: 0.95em; /* Slightly smaller font for sub-bullets */
+		        color: #555; /* Lighter color for second-level bullets */
+		    }
+
+		    /* Customize third-level bullets if needed */
+		    ul ul ul {
+		        list-style-type: square; /* Change bullet style for third level */
+		        margin-left: 40px; /* Increase indentation for deeper levels */
+		        font-size: 0.9em; /* Even smaller font for deeper levels */
+		        color: #333; /* Darker color for third-level bullets */
+		    }
+		</style>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+		<div id="wrapper">
+			<!-- Header -->
+			<header id="header">
+				<div class="inner">
+
+					<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Exploratory Data Analysis of a Global Layoff Dataset</h1>
+							<a href="https://github.com/aleneadavis/Exploratory-Data-Analysis-of-a-Global-Layoff-Dataset/blob/main/Exploratory%20Data%20Analysis%20Project.sql" target="_blank">
+								<span class="image main"><img src="images/exploratory-explanatory.png" alt="" /></span>
+							</a>
+							<!-- Overview -->
+							<p><strong style="font-size: 30px;">Overview:</strong></p>
+							<p>This project focused on performing exploratory data analysis (EDA) on a cleaned dataset of global layoffs using SQL. The dataset included key details about layoffs from companies across various industries and countries, such as the number of employees laid off, the percentage of the workforce affected, and the dates of the events. The primary goal was to uncover patterns and trends to better understand the global impact of layoffs on businesses.</p>
+							<p><a href="https://github.com/aleneadavis/Exploratory-Data-Analysis-of-a-Global-Layoff-Dataset/blob/main/Exploratory%20Data%20Analysis%20Project.sql" class="button" target="_blank">Click here to view my exploratory analysis of the dataset</a></p>
+
+							<!-- Key Insights -->
+							<p><strong style="font-size: 30px;">Key Insights:</strong></p>
+							<ul>
+								<li><strong style="font-size: 20px;">Largest Layoffs:</strong>
+									<ul>
+										<li><span style="font-weight: 500;">Amazon</span> led the layoffs, with a total of <strong>18,150 employees</strong> laid off across various locations, primarily within the <strong>Retail</strong> industry.</li>
+										<li>The highest layoff percentage recorded was <strong>100%</strong>, seen in companies like <strong>Katerra</strong> and <strong>Butler Hospitality</strong>, which fully shut down their operations.</li>
+									</ul>
+									<div style="display: flex; justify-content: center; gap: 20px; margin-top: 15px;">
+										<img src="images/most_layoffs.PNG" alt="Layoff Chart 1" style="width: 100%; max-width: 600px;" />
+										<img src="images/shutdown.PNG" alt="Layoff Chart 2" style="width: 100%; max-width: 600px;" />
+									</div>
+								</li>
+								
+								<li><strong style="font-size: 20px;">Top Industries Affected:</strong>
+									<ul>
+										<li>The <strong>Consumer</strong> and <strong>Retail</strong> industries were significantly impacted, with major contributors like <strong>Amazon</strong>, <strong>Google</strong>, and <strong>Meta</strong> accounting for over <strong>40,000 layoffs</strong>.</li>
+										<li>The <strong>Consumer</strong> industry saw over <strong>45,000 layoffs</strong>, while the <strong>Retail</strong> industry recorded over <strong>43,000 layoffs.</strong></li>
+									</ul>
+									<div style="text-align: center; margin-top: 15px;">
+										<img src="images/Capture.PNG" alt="Industries Chart" style="width: 100%; max-width: 500px; margin-top: 15px;" />
+									</div>
+								</li>
+
+								<li><strong style="font-size: 20px;">Company-Specific Patterns:</strong>
+									<ul>
+										<li><strong>Uber</strong> experienced layoffs across multiple countries, including the <strong>United States, Netherlands, India,</strong> and <strong>Lithuania</strong>, with reductions ranging from <strong>3% to 25%</strong> of their workforce at different locations.</li>
+										<li>Companies like <strong>Airbnb</strong> and <strong>Lyft</strong> also faced significant layoffs, particularly during the peak of the pandemic in 2020.</li>
+									</ul>
+								</li>
+
+								<li><strong style="font-size: 20px;">Country-Level Impact:</strong>
+									<ul>
+										<li>The <strong>United States</strong> bore the brunt of the layoffs, with over <strong>250,000 employees</strong> laid off across various industries.</li>
+										<li>Other heavily affected countries included <strong>India, Netherlands,</strong> and <strong>Sweden</strong>, each experiencing notable workforce reductions.</li>
+									</ul>
+									<div style="text-align: center; margin-top: 15px;">
+										<img src="images/country_impact.PNG" alt="Country Chart" style="width: 100%; max-width: 500px; margin-top: 15px;" />
+									</div>
+								</li>
+
+								<li><strong style="font-size: 20px;">Temporal Patterns:</strong>
+									<ul>
+										<li>Layoffs spanned from <strong>2020 to 2023</strong>, with the highest number occurring in <strong>2022</strong>, totaling over <strong>160,000 employees</strong> as companies adjusted post-COVID-19.</li>
+										<li>January 2023 was particularly hard-hit, with over <strong>80,000</strong> layoffs in that month alone, reflecting continued workforce adjustments stemming from the pandemic's economic aftermath.</li>
+									</ul>
+								</li>
+
+								<li><strong style="font-size: 20px;">Rolling Total Analysis:</strong>
+									<ul>
+										<li>A rolling total analysis revealed a consistent increase in layoffs from <strong>February 2022 to February 2023</strong>, with a cumulative total of <strong>157,000 employees</strong> laid off by mid-2022.</li>
+									</ul>
+									<div style="text-align: center; margin-top: 15px;">
+										<img src="images/Rolling_total.PNG" alt="Rolling Chart" style="width: 100%; max-width: 600px; margin-top: 15px;" />
+									</div>
+								</li>
+
+								<li><strong style="font-size: 20px;">Layoff Trends by Company Stage:</strong>
+									<ul>
+										<li><strong>Post-IPO</strong> companies accounted for the largest number of layoffs, contributing nearly <strong>40%</strong> of the total layoffs.</li>
+										<li>Early-stage companies, particularly those in the <strong>Series B</strong> funding stage, also faced considerable layoffs, likely due to difficulties raising funds.</li>
+									</ul>
+								</li>
+
+								<li><strong style="font-size: 20px;">Layoffs by Workforce Size:</strong>
+									<ul>
+										<li>Smaller companies (those with fewer than <strong>500 employees</strong>) experienced higher layoff percentages, with <strong>20%</strong> of these companies laying off more than <strong>10-15%</strong> of their workforce. Larger companies typically laid off 10-15% of their workforce.</li>
+									</ul>
+								</li>
+							</ul>
+
+							<!-- Techniques Used -->
+							<p><strong style="font-size: 30px;">Techniques Used:</strong></p>
+							<ul>
+								<li>Grouped data by company, industry, and country to identify the most affected entities.</li>
+								<li>Applied SQL window functions to calculate rolling totals and examine layoff trends over time.</li>
+								<li>Extracted date components (year, month) to analyze layoffs by time period.</li>
+								<li>Grouped data by company stage to explore trends across different growth phases.</li>
+							</ul>
+
+							<!-- Conclusion -->
+							<p>This exploratory analysis provided valuable insights into global layoff trends, highlighting key patterns across industries, countries, and companies that were most affected.</p>
+					
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<!-- Footer -->
+			<footer>
+				<section style="text-align: center;">
+					<h2>Contact</h2>
+					<ul class="icons" style="list-style: none; padding: 0; margin: 0; display: inline-block;">
+						<li style="display: inline-block; margin-right: 10px;"><a href="https://www.linkedin.com/in/alenea-davis/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li style="display: inline-block; margin-right: 10px;"><a href="https://github.com/aleneadavis" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+						<li style="display: inline-block; margin-right: 10px;"><a href="tel:+1318947262" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+						<li style="display: inline-block;"><a href="mailto:aleneadavis@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+				</section>
+				<ul class="copyright" style="text-align: center; list-style: none; padding: 0; margin-top: 20px;">
+					<li>&copy; Alenea Davis. All rights reserved.</li>
+				</ul>
+			</footer>
+					</div>
+
+					<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+
+
+
+
+	

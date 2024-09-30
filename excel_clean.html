@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Alenea Davis Portfolio - Bike Sales Cleaning</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							
+				<!-- Main -->
+				<div id="main">
+					<div class="project-section">
+						<h1>Data Cleaning and Preparation for Bike Buyers Dataset</h1>
+							<span class="image main"><img src="images/Road-bike.png" alt="" /></span>
+							<p><strong style="font-size: 30px;">Overview:</strong></p>
+							<p>This project involved preparing a customer bike purchasing dataset for exploratory data analysis (EDA). The dataset, containing <strong>1,026 records</strong>, required cleaning to <strong>standardize categorical data</strong>, <strong>remove special characters</strong>, and <strong>classify customers into age brackets</strong> for more meaningful analysis. After addressing <strong>missing data</strong> and ensuring consistency, the dataset was ready for insights into how factors like <strong>income, age, and gender</strong> influenced bike purchases.</p>
+
+							<p><a href="https://www.dropbox.com/scl/fi/va8ocfd9r1o853srzx7dz/Bike-Sales-Project.xlsx?rlkey=p4u7fvlsy30xgtvfwo060of5v&st=t5xzrgmk&dl=0" class="button" target="_blank">Click here to download this excel project</a></p>
+						<!-- Data Summary Section -->
+						<p><strong style="font-size: 30px;">Data Summary:</strong></p>
+						<ul>
+							<li>The dataset contains <strong>1,026 records</strong> detailing customer demographics and purchase behavior.</li>
+							<li>Key fields include <strong>Gender, Marital Status, Age, Occupation, Income, Commute Distance, and Bike Purchase Status</strong>.</li>
+							<li>The data required significant cleaning, including <strong>removing special characters</strong> from numeric fields and <strong>standardizing categorical variables</strong>.</li>
+							<li>Over <strong>30% of the data</strong> had missing values, which were handled by either filling in with context-appropriate values or removing incomplete rows.</li>
+						</ul>
+
+						
+
+						<p><strong style="font-size: 30px;">1. Standardizing Categorical Data</strong></p>
+						<p>To ensure consistency across the dataset, I standardized entries in the following columns:</p>
+						<ul>
+							<li><strong>Gender</strong>: Converted abbreviations ('M' and 'F') to full terms ("Male" and "Female").</li>
+							<li><strong>Marital Status</strong>: Transformed 'M' and 'S' into "Married" and "Single" for clearer distinction.</li>
+						</ul>
+				
+						<h4>Before Cleaning:</h4>
+						<table>
+							<tr>
+								<th>Gender</th>
+								<th>Marital Status</th>
+							</tr>
+							<tr>
+								<td>M</td>
+								<td>M</td>
+							</tr>
+							<tr>
+								<td>F</td>
+								<td>S</td>
+							</tr>
+						</table>
+				
+						<h4>After Cleaning:</h4>
+						<table>
+							<tr>
+								<th>Gender</th>
+								<th>Marital Status</th>
+							</tr>
+							<tr>
+								<td>Male</td>
+								<td>Married</td>
+							</tr>
+							<tr>
+								<td>Female</td>
+								<td>Single</td>
+							</tr>
+						</table>
+				
+						<p><strong style="font-size: 30px;">2. Removing Special Characters in Numeric Fields</strong></p>
+						<p>In the income column, I removed special characters such as dollar signs and commas, converting the field into a numeric format for easier analysis.</p>
+				
+						<h4>Before Cleaning:</h4>
+						<table>
+							<tr>
+								<th>Income</th>
+							</tr>
+							<tr>
+								<td>$40,000.00</td>
+							</tr>
+							<tr>
+								<td>$70,000.00</td>
+							</tr>
+						</table>
+				
+						<h4>After Cleaning:</h4>
+						<table>
+							<tr>
+								<th>Income</th>
+							</tr>
+							<tr>
+								<td>40000</td>
+							</tr>
+							<tr>
+								<td>70000</td>
+							</tr>
+						</table>
+				
+						<p><strong style="font-size: 30px;">3. Age Group Classification</strong></p>
+						<p>To facilitate demographic analysis, I created a new column called <strong>Age Brackets</strong> that categorized individuals into three distinct age groups: <strong>Old</strong>, <strong>Middle Age</strong>, and <strong>Adolescent</strong>. The classification was based on the following formula:</p>
+						<pre><code>=IF(L2&gt;54,"Old",IF(L2&gt;=31,"Middle Age",IF(L2&lt;31,"Adolescent","Invalid")))</code></pre>
+				
+						<ul>
+							<li><strong>Old</strong>: Age &gt; 54</li>
+							<li><strong>Middle Age</strong>: 31 ≤ Age ≤ 54</li>
+							<li><strong>Adolescent</strong>: Age &lt; 31</li>
+						</ul>
+
+						<h4>New Age Brackets:</h4>
+						<table>
+							<tr>
+								<th>Age</th>
+								<th>Age Brackets</th>
+							</tr>
+							<tr>
+								<td>42</td>
+								<td>Middle Age</td>
+							</tr>
+							<tr>
+								<td>60</td>
+								<td>Old</td>
+							</tr>
+							<tr>
+								<td>29</td>
+								<td>Adolescent</td>
+							</tr>
+						</table>
+					
+						<p><strong style="font-size: 30px;">4. Text Formatting</strong></p>
+						<p>Consistency was ensured in fields like "Occupation" and "Region" by standardizing text entries, which improved clarity and removed any potential inconsistencies in categorical data.</p>
+					
+						<p><strong style="font-size: 30px;">5. Handling Missing Data</strong></p>
+						<p>Where necessary, missing or inconsistent data were addressed. I either filled in with appropriate values or removed incomplete rows to ensure a clean and reliable dataset for analysis.</p>
+					
+						<p><strong style="font-size: 30px;">Final Cleaned Dataset</strong></p>
+						<p>This clean and structured dataset was the foundation for my exploratory analysis. The steps I took ensured that the dataset was ready for meaningful insights into customer behavior and bike purchasing patterns.</p>
+					
+					
+					</div>
+				</div>	
+				
+
+				<!-- Footer -->
+<footer>
+	<section style="text-align: center;"> <!-- Add inline or external CSS -->
+		<h2>Contact</h2>
+		<ul class="icons" style="list-style: none; padding: 0; margin: 0; display: inline-block;"> <!-- Center the icons -->
+			<li style="display: inline-block; margin-right: 10px;"><a href="https://www.linkedin.com/in/alenea-davis/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+			<li style="display: inline-block; margin-right: 10px;"><a href="https://github.com/aleneadavis" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+			<li style="display: inline-block; margin-right: 10px;"><a href="tel:+1318947262" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+			<li style="display: inline-block;"><a href="mailto:aleneadavis@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+		</ul>
+	</section>
+	<ul class="copyright" style="text-align: center; list-style: none; padding: 0; margin-top: 20px;">
+		<li>&copy; Alenea Davis. All rights reserved.</li>
+		
+	</ul>
+</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Alenea Davis Portfolio - Airbnb Listing and Pricing Analysis</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <h1>Airbnb Listing and Pricing Analysis for Rental Placement</h1>
+                <span class="image main"><img src="images/Airbnb_Inc_Logo.jpg" alt="" /></span>
+            </div>
+        </header>
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+                <p><strong style="font-size: 35px;">Overview:</strong></p>
+                <p>This project uses <strong>Tableau</strong> to analyze Airbnb data to identify the best locations and property types for maximizing rental revenue. By examining factors such as <strong>location</strong>, <strong>property size</strong>, and <strong>pricing trends</strong>, it offers insights to help hosts make data-driven decisions when starting or managing an Airbnb rental.</p>
+        
+                
+                <p><a href="https://public.tableau.com/app/profile/alenea.davis/viz/AirbnbProject_17272810984010/Dashboard" class="button" target="_blank">Click here to explore the interactive dashboard</a></p>
+
+                <p><strong style="font-size: 35px;">Data Summary:</strong></p>
+                <ul>
+                    <li><strong>Listings Data:</strong> Detailed information about Airbnb properties, including descriptions, review scores, neighborhood data, and prices.</li>
+                    <li><strong>Calendar Data:</strong> Daily availability and pricing for each listing, offering insights into pricing fluctuations and availability patterns over time.</li>
+                </ul>
+
+                <p><strong style="font-size: 35px;">Use Case</strong></p>
+                <p>A prospective Airbnb host wants to determine the best neighborhood and property size to maximize rental income. They need insights on which areas of Seattle have <strong>higher demand</strong>, what <strong>price points</strong> are competitive, and how factors like the <strong>number of bedrooms</strong> influence booking potential.</p>
+
+                <p><strong style="font-size: 35px;">Data Cleaning and Preparation</strong></p>
+                <ul>
+                    <li><strong>Listings Data:</strong> Filtered for essential attributes such as listing ID, price, number of bedrooms, and zip code. Null values in critical columns were handled to ensure accurate analysis.</li>
+                    <li><strong>Calendar Data:</strong> Daily price and availability fields were transformed to focus on active listings and to exclude missing or unavailable dates.</li>
+                </ul>
+
+                <p><strong style="font-size: 35px;">Key Insights and Visualizations</strong></p>
+                <p><strong style="font-size: 25px;">1. Average Airbnb Price by Neighborhood (Zipcode)</strong></p>
+                <p>This visualization highlights the price variation across different Seattle zip codes. Zip codes like <strong>98121</strong> and <strong>98101</strong> feature higher average prices, making them ideal for luxury or premium rentals.</p>
+                <img src="images/zipcode_bar.PNG" alt="Zipcode Bar" style="width: 100%; max-width: 1200px;" />
+
+                <p><strong style="font-size: 25px;">2. Map of Average Prices by Zipcode</strong></p>
+                <p>A map showing the <strong>average nightly rate</strong> for Airbnb listings by zipcode. This gives a visual representation of how location impacts pricing, with some neighborhoods charging over <strong>150% more</strong> than others.</p>
+                <img src="images/zipcode_map.PNG" alt="Zipcode Map" style="width: 100%; max-width: 1200px;" />
+
+                <p><strong style="font-size: 25px;">3. Revenue Trends Throughout 2016</strong></p>
+                <p>Revenue trends show <strong>peak periods during the summer</strong> (July–August), suggesting that the user should consider seasonal fluctuations when setting rental prices.</p>
+                <img src="images/revenue.PNG" alt="Revenue" style="width: 100%; max-width: 1200px;" />
+
+                <p><strong style="font-size: 25px;">4. Average Price Per Night by Bedrooms</strong></p>
+                <p><strong>Properties with more bedrooms command higher prices</strong>. For example, 5-bedroom listings average $584.8 per night, compared to $175.4 for 1-bedroom properties.</p>
+                <img src="images/avg_bedroom.PNG" alt="Average Bedroom" style="width: 100%; max-width: 1200px;" />
+
+                <p><strong style="font-size: 25px;">5. Listings by Bedroom Count</strong></p>
+                <p>Most listings are 1 to 2 bedroom properties. However, <strong>fewer 4 to 5 bedroom properties exist</strong>, offering a competitive advantage for users targeting larger group rentals.</p>
+                <img src="images/bedroom_count.PNG" alt="Bedroom Count" style="width: 100%; max-width: 400px;" />
+
+                <p><strong style="font-size: 35px;">Answering Key Questions</strong></p>
+                <p><strong style="font-size: 25px;">1. Which locations offer the highest potential profit for the user?</strong></p>
+                <p>Zip codes <strong>98121</strong> and <strong>98101</strong> are the most profitable locations due to higher average nightly rates. These areas attract both <strong>tourists</strong> and <strong>business travelers</strong>, making them ideal for premium rentals.</p>
+
+                <p><strong style="font-size: 25px;">2. What type of property should the user invest in to maximize rental income?</strong></p>
+                <p><strong>Larger properties with more bedrooms</strong> tend to command higher nightly rates. Investing in <strong>4 to 5 bedroom properties</strong> could generate higher returns, especially in high-demand neighborhoods.</p>
+
+                <p><strong style="font-size: 25px;">3. When should the user make their rental available to generate the most revenue?</strong></p>
+                <p><strong>Peak rental periods occur during the summer</strong> (July–August), when demand for short-term rentals is highest. It is crucial to make the property available during these times to maximize revenue.</p>
+
+                <p><strong style="font-size: 25px;">4. What are the key factors that influence Airbnb pricing?</strong></p>
+                <p><strong>Location</strong> and the <strong>number of bedrooms</strong> are the primary factors affecting Airbnb pricing. Properties in <strong>premium zip codes</strong> and those with more bedrooms tend to fetch higher prices.</p>
+
+                <p><strong style="font-size: 35px;">Challenges Faced & Solutions</strong></p>
+                <p>Managing <strong>large datasets</strong> required careful filtering to maintain performance in Tableau. Handling <strong>missing values</strong> in the pricing fields was crucial for ensuring accurate visualizations. Visualization choices such as <strong>bar charts, line graphs, and maps</strong> effectively communicated insights based on geographical pricing trends and property characteristics.</p>
+
+                <p><strong style="font-size: 35px;">Potential Further Questions/Analysis</strong></p>
+                <ul>
+                    <li><strong>Occupancy Rate Analysis:</strong> How does occupancy vary by zip code and property size?</li>
+                    <li><strong>Review Analysis:</strong> How do guest reviews impact demand and pricing?</li>
+                    <li><strong>Revenue Optimization:</strong> What are the best pricing strategies to maximize revenue?</li>
+                    <li><strong>Impact of Amenities on Pricing:</strong> How do amenities such as WiFi or pool access affect nightly rates?</li>
+                </ul>
+
+                <p><strong style="font-size: 35px;">Tools and Skills</strong></p>
+                <ul>
+                    <li><strong>Tools:</strong> Tableau, Excel</li>
+                    <li><strong>Skills:</strong> Data cleaning, data visualization, trend analysis, dashboard design, geographical analysis</li>
+                </ul>
+
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <section style="text-align: center;">
+                <h2>Contact</h2>
+                <ul class="icons" style="list-style: none; padding: 0; margin: 0; display: inline-block;">
+                    <li style="display: inline-block; margin-right: 10px;"><a href="https://www.linkedin.com/in/alenea-davis/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                    <li style="display: inline-block; margin-right: 10px;"><a href="https://github.com/aleneadavis" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+                    <li style="display: inline-block; margin-right: 10px;"><a href="tel:+1318947262" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+                    <li style="display: inline-block;"><a href="mailto:aleneadavis@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+                </ul>
+            </section>
+            <ul class="copyright" style="text-align: center; list-style: none; padding: 0; margin-top: 20px;">
+                <li>&copy; Alenea Davis. All rights reserved.</li>
+            </ul>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>

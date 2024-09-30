@@ -1,0 +1,86 @@
+
+
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Alenea Davis Portfolio - Global Layoff Cleaning</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Data Cleaning of a Global Layoff Dataset</h1>
+							<a href="https://github.com/aleneadavis/Data-Cleaning-of-a-Global-Layoff-Dataset/blob/main/Data%20Cleaning%20Project.2.sql" target="_blank">
+								<span class="image main"><img src="images/Layoff_employees.png" alt="" /></span>
+							</a>
+							<p><strong style="font-size: 30px;">Overview:</strong></p>
+							<p>This project involved cleaning and preparing a global layoff dataset for analysis. The dataset contained 2,361 records across 9 key columns, detailing company layoffs across 60 countries. Key fields included the number of employees laid off, the percentage of workforce affected, the company’s location, industry, and growth stage, as well as the amount of funds raised. However, there were significant challenges with <strong>missing data</strong>, <strong>duplicate entries</strong>, <strong>unnecessary columns</strong>, and <strong>inconsistencies</strong> that required careful handling.</p>
+							<p><a href="https://github.com/aleneadavis/Data-Cleaning-of-a-Global-Layoff-Dataset/blob/main/Data%20Cleaning%20Project.2.sql" class="button" target="_blank">Click here to view my SQL queries used in this analysis</a></p>
+							
+							<p><strong style="font-size: 30px;">Data Summary:</strong></p>
+							<ul>
+								<li>The dataset featured <strong>1,893 unique companies</strong>, with some companies appearing multiple times.</li>
+								<li>Key columns such as <strong>total_laid_off</strong> and <strong>percentage_laid_off</strong> contained substantial missing data (740 and 785 missing values, respectively).</li>
+								<li>There were <strong>32 industries</strong> represented, with Finance being the most common, and <strong>16 growth stages</strong>, predominantly Post-IPO.</li>
+								<li>The number of employees laid off ranged from <strong>3 to 12,000</strong>, with an average of 238.</li>
+							</ul>
+							
+							<p><strong style="font-size: 30px;">Data Cleaning Process:</strong></p>
+							<ul>
+								<li><strong>Duplicate Handling:</strong> Identified and removed duplicate records based on key fields such as company name, industry, location, and layoff details using SQL queries with <strong>ROW_NUMBER()</strong>.</li>
+								<li><strong>Missing Values:</strong> Addressed missing data in crucial fields like <strong>total_laid_off</strong> and <strong>percentage_laid_off</strong> by removing or imputing values based on the analysis context.</li>
+								<li><strong>Standardization:</strong> Cleaned up inconsistencies in text fields (e.g., company names and countries) and ensured uniform formatting for numerical fields such as layoff percentages and funds raised.</li>
+								<li><strong>Removal of Unnecessary Columns and Rows:</strong> Removed columns and rows that were irrelevant or redundant, such as those containing irrelevant metadata or excessive null values, ensuring that the dataset only contained fields necessary for further analysis. This streamlined the dataset and improved its overall integrity.</li>
+							</ul>
+							
+							<p><strong style="font-size: 30px;">Tools Used:</strong></p>
+							<p><strong>SQL:</strong> Data cleaning was performed using MySQL, where queries were written to handle duplicates, null values, standardize entries, and remove irrelevant data.</p>
+							
+							<p>This project highlights my ability to manage and clean complex datasets, ensuring they are ready for meaningful analysis and visualization.</p>
+
+						</div>
+					</div>
+
+				<!-- Footer -->
+				<footer>
+					<section style="text-align: center;"> <!-- Add inline or external CSS -->
+						<h2>Contact</h2>
+						<ul class="icons" style="list-style: none; padding: 0; margin: 0; display: inline-block;"> <!-- Center the icons -->
+							<li style="display: inline-block; margin-right: 10px;"><a href="https://www.linkedin.com/in/alenea-davis/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li style="display: inline-block; margin-right: 10px;"><a href="https://github.com/aleneadavis" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+							<li style="display: inline-block; margin-right: 10px;"><a href="tel:+1318947262" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+							<li style="display: inline-block;"><a href="mailto:aleneadavis@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+					</section>
+					<ul class="copyright" style="text-align: center; list-style: none; padding: 0; margin-top: 20px;">
+						<li>&copy; Alenea Davis. All rights reserved.</li>
+					</ul>
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+
+
+

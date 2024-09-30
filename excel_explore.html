@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Alenea Davis Portfolio - Bike Sales Data Analysis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<!-- Add your header here -->
+				</div>
+			</header>
+
+			<!-- Main -->
+			<div id="main">
+				<div class="inner">
+					<h1>Exploratory Data Analysis of a Bike Sales Dataset</h1>
+					<span class="image main"><img src="images/Sales-Data.webp" alt="Bike Sales Dashboard" /></span>
+
+					<!-- Overview -->
+					<p><strong style="font-size: 35px;">Overview:</strong></p>
+					<p>This project presents the insights derived from the cleaned bike sales dataset through a series of pivot tables and visualizations. The exploratory data analysis (EDA) focuses on understanding customer <strong>demographics</strong>, <strong>purchasing patterns</strong>, and <strong>behaviors</strong>. Each visualization is paired with key insights and actionable conclusions.</p>
+					
+					<p><a href="https://www.dropbox.com/scl/fi/va8ocfd9r1o853srzx7dz/Bike-Sales-Project.xlsx?rlkey=p4u7fvlsy30xgtvfwo060of5v&st=t5xzrgmk&dl=0" class="button" target="_blank">Click here to download my interactive dashboard</a></p>
+					<hr />
+
+					<!-- Pivot Tables and Charts -->
+					<p><strong style="font-size: 35px;">1. Creation of Pivot Tables and Charts</strong></p>
+
+					<!-- Average Income Per Purchase (By Gender) -->
+					<p><strong style="font-size: 25px;">Average Income Per Purchase (By Gender)</strong></p>
+					<span class="image main"><img src="images/Avg.income.PNG" alt="Average Income Per Purchase by Gender" /></span>
+					<ul>
+						<li><strong>Female customers</strong> who purchased bikes have an average income of <strong>$55,774</strong>, while those who did not purchase have an average income of <strong>$53,440</strong>.</li>
+						<li><strong>Male customers</strong> who purchased bikes have an average income of <strong>$60,124</strong>, compared to <strong>$56,208</strong> for those who didn’t.</li>
+					</ul>
+					<p><strong>Conclusion:</strong> Higher income correlates with a greater likelihood of purchasing a bike for both genders, showing that income is a key determinant in the purchasing decision.</p>
+
+					<hr />
+
+					<!-- Customer Age Brackets (By Purchase) -->
+					<p><strong style="font-size: 25px;">Customer Age Brackets (By Purchase)</strong></p>
+					<span class="image main"><img src="images/age.brackets.PNG" alt="Customer Age Brackets by Purchase" /></span>
+					<ul>
+						<li><strong>Middle Age (31-54)</strong> is the group with the highest number of bike purchases, totaling <strong>383</strong>.</li>
+						<li><strong>Older customers (>54)</strong> are much less likely to purchase a bike, with only <strong>59</strong> purchases.</li>
+						<li>The <strong>Adolescent group (<31)</strong> had the fewest purchases, with only <strong>39</strong>.</li>
+					</ul>
+					<p><strong>Conclusion:</strong> Middle-aged individuals are the most likely to purchase bikes, likely due to a balance of income, health, and lifestyle choices. As customers get older or are younger, bike purchases tend to decline.</p>
+
+					<hr />
+
+					<!-- Customer Commute Distance (By Purchase) -->
+					<p><strong style="font-size: 25px;">Customer Commute Distance (By Purchase)</strong></p>
+					<span class="image main"><img src="images/customer.commute.PNG" alt="Customer Commute Distance by Purchase" /></span>
+					<ul>
+						<li>Customers with a <strong>0-1 mile commute distance</strong> are the most likely to purchase bikes (<strong>200 buyers</strong>).</li>
+						<li>As the <strong>commute distance increases</strong>, the likelihood of purchasing a bike decreases significantly.</li>
+					</ul>
+					<p><strong>Conclusion:</strong> Biking is popular for short commutes, likely due to the convenience or fitness aspect. Longer commutes are less conducive to bike usage, resulting in fewer purchases.</p>
+
+					<hr />
+
+					<!-- Gender Distribution by Region -->
+					<p><strong style="font-size: 25px;">Gender Distribution (By Region)</strong></p>
+					<span class="image main"><img src="images/gender.region.PNG" alt="Gender Distribution by Region" /></span>
+					<ul>
+						<li><strong>North America</strong> has the highest total customer count <strong>(508)</strong>, with a nearly equal distribution between <strong>males (269)</strong> and <strong>females (239)</strong>.</li>
+						<li><strong>Europe</strong> has more <strong>female customers (164)</strong> than <strong>male customers (136)</strong>.</li>
+						<li>The <strong>Pacific region</strong> has more <strong>male customers (106)</strong> than <strong>female customers (86)</strong>.</li>
+					</ul>
+					<p><strong>Conclusion:</strong> Gender distribution varies slightly by region, with North America being the most balanced in terms of male and female customers, while Europe and the Pacific show more significant differences.</p>
+
+					<hr />
+
+					<!-- Creating a Dashboard Derived from Pivot Tables -->
+					<p><strong style="font-size: 35px;">2. Creating a Dashboard Derived from the Pivot Tables</strong></p>
+					<span class="image main"><img src="images/dashboard.PNG" alt="Dashboard" /></span>
+					<p>Each section of the dashboard was created using pivot tables that allowed me to summarize and visualize key customer insights. Below are the key pivot tables that were used to generate the visualizations:</p>
+					<ol>
+						<li><strong>Average Income Per Purchase:</strong> Derived from a pivot table that grouped customer income by gender and purchase status.</li>
+						<li><strong>Customer Age Brackets:</strong> A pivot table categorized customers into three age brackets to compare bike purchases.</li>
+						<li><strong>Customer Commute Distance:</strong> A pivot table used to analyze the relationship between commute distance and bike purchases.</li>
+						<li><strong>Detailed Age Breakdown:</strong> This chart was derived from a pivot table that counted purchases per exact age.</li>
+						<li><strong>Gender by Region:</strong> This pivot table compared gender counts across different regions.</li>
+					</ol>
+
+					<p>The interactive dashboard allows users to filter data by marital status, region, and education level, helping to explore purchasing behavior across various demographics.</p>
+
+					<hr />
+
+					<!-- Concluding Insights and Next Steps -->
+					<p><strong style="font-size: 35px;">3. Concluding Insights and Next Steps</strong></p>
+					<p><strong style="font-size: 25px;">Summary of Insights:</strong></p>
+					<ol>
+						<li><strong>Income and Bike Purchases:</strong> Higher-income customers are more likely to purchase bikes, especially men.</li>
+						<li><strong>Age and Purchasing Behavior:</strong> Middle-aged individuals (31-54) dominate bike purchases, while adolescents and older customers are less likely to buy.</li>
+						<li><strong>Commute Distance:</strong> Shorter commutes correlate with higher bike purchases.</li>
+						<li><strong>Gender Distribution:</strong> Gender distribution varies across regions, with North America having a more balanced customer base.</li>
+					</ol>
+
+					<p><strong style="font-size: 25px;">Next Steps:</strong></p>
+					<p>Further analysis could involve exploring more granular geographic data or combining this dataset with external factors like climate or urban density to understand how environmental factors influence bike purchases.</p>
+				
+				</div>
+			</div>
+
+
+			</div>
+
+		<!-- Footer -->
+<footer>
+	<section style="text-align: center;"> <!-- Add inline or external CSS -->
+		<h2>Contact</h2>
+		<ul class="icons" style="list-style: none; padding: 0; margin: 0; display: inline-block;"> <!-- Center the icons -->
+			<li style="display: inline-block; margin-right: 10px;"><a href="https://www.linkedin.com/in/alenea-davis/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+			<li style="display: inline-block; margin-right: 10px;"><a href="https://github.com/aleneadavis" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+			<li style="display: inline-block; margin-right: 10px;"><a href="tel:+1318947262" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+			<li style="display: inline-block;"><a href="mailto:aleneadavis@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+		</ul>
+	</section>
+	<ul class="copyright" style="text-align: center; list-style: none; padding: 0; margin-top: 20px;">
+		<li>&copy; Alenea Davis. All rights reserved.</li>
+		
+	</ul>
+</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
